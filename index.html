@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raj</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Raj Tripathi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- <img src="./assets/moon.png" alt="moon" id="dark-theme"> -->
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Raj Tipathi</div>
+        <div class="hamburger-menu">
+            <div id="hamburger-logo-id" class="hamburger-icon" onclick="toggleManu()">
+                <!-- #These are the lines of our hamburger menu     -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="ham-list"class="menu-links">
+                <li><a href="#about" onclick="toggleManu()">About</a></li>
+                <li><a href="#experience" onclick="toggleManu()">experience</a></li>
+                <li><a href="#projects" onclick="toggleManu()">projects</a></li>
+                <li><a href="#contact" onclick="toggleManu()">contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div id="profile-pic-div" class="section__pic-container image-float">
+            <img id="profile3" src="./assets/Profile3.jpg" alt="sample profile pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Raj</h1>
+
+            <p class="section__text__p2"><span class="auto-type-class"></span></p>
+
+            <div class="bt-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact me</button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/raj-tripathi-6208ab241/'">
+                <img src="./assets/github.png" alt="my github" class="icon"
+                    onclick="location.href='https://github.com/RAJTripathi3030'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About me</h1>
+        <div class="section-container">
+            <div class="section__container">
+                <img src="assets/Webinar-pana.png" alt="profile pic" class="about-pic image-float-2" width="500px">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container hover-exp">
+                        <img src="./assets/experience.png" alt="exp icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2 Years <br>Frontend Development</p>
+                        <br>
+                        <p>2+ Years <br>Problem Solving</p>
+                    </div>
+                    <div class="details-container hover-exp">
+                        <img src="./assets/education.png" alt="edu icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology (B.Tech) in Computer Science and Engineering<br>ABES Engineering
+                            College <br><span class="edu-span">2021 - Present</span></p>
+                        <p>Higher Secondary (12th Grade)<br>DAV Public School <br><span class="edu-span">2020</span></p>
+                        <p>Secondary School (10th Grade)<br>DAV Public School <br><span class="edu-span">2018</span></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <br>
+                    I am a dedicated and ambitious B.Tech student with a specialized focus on Data Science. I possess an
+                    unwavering drive to tackle new challenges and seize opportunities that allow me to broaden my skills
+                    and knowledge base. With a solid grounding in Data Structures and Algorithms (DSA) coupled with a
+                    profound interest in Data Analytics and Web Development, I am resolute in my pursuit to become a
+                    well-rounded and adaptable data professional. I am enthusiastic about applying my technical acumen
+                    to address real-world issues and effect positive change within the field. During my leisure time, I
+                    immerse myself in a variety of coding projects and actively participate in hackathons to stay
+                    abreast of the latest industry trends. Embracing new endeavors is a personal passion, as it provides
+                    invaluable learning experiences even in the absence of immediate mastery.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <sectioin id="experience">
+        <p class="section__text__p1 exp-para">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container ">
+            <div class="about-containers ">
+                <div class="details-container hover-exp">
+                    <h2 class="experience-subtitle">Frontend Development</h2>
+                    <div class="article-container ">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container hover-exp">
+                    <h2 class="experience-subtitle">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <div class="details-container hover-exp">
+                    <h2 class="experience-subtitle">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+                <img src="./assets/Knowledge-amico.png" alt="exp-pic" width="400px" class="image-float-2">
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </sectioin>
+    <section id="projects">
+        <p class="section__text__p1 new-position">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container hover-exp">
+                <div class="artices-container">
+                    <img src="./assets/Confirmed attendance-bro.png" alt="" width="400px"
+                        class="image-float-2 project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">PresentSeek - The Attendance Management System</h2>
+                <p class="section__text__p1">Developed an Attendance Management System comprising of Admin, Teacher, and
+                    Student Interfaces. Admin can create
+                    teacher and student accounts, while the teacher can create and remove classes, add/remove students,
+                    mark attendance
+                    and view previous records. Students can view their subject-wise and overall attendance percentage.
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="location.href='https://github.com/RAJTripathi3030/PresentSeek---mini-project'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="" class="icon contact-icon">
+                <p><a href="mailto:tripathiraj3030@gmail.com">
+                        tripathiraj3030@gmail.com
+                    </a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="" class="icon contact-icon">
+                <p><a href="mailto:tripathiraj3030@gmail.com">
+                        raj.21b1541046@abes.ac.in
+                    </a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Raj Tripathi. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- auto-type -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type-class", {
+            strings: ["A DSA Enthusiast", "ML Enthusiast", "a Web Developer"],
+            typeSpeed: 76,
+            backSpeed: 76,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
