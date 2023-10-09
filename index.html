@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>raj</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Raj Tripathi</div>
+        <div class="logo" id="logo-id">Raj Tripathi</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <img src="./assets/moon.png" alt="moon-pic" class="icon dark-theme">
             </ul>
-            <!-- <img src="./assets/moon.png" alt="moon" id="dark-theme"> -->
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -111,22 +111,22 @@
                 <div class="details-container hover-exp">
                     <h2 class="experience-subtitle">Frontend Development</h2>
                     <div class="article-container ">
-                        <article>
+                        <article >
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
+                            <div class="dark-article">
+                                <h3 >HTML</h3>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>CSS</h3>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>JavaScript</h3>
                             </div>
                         </article>
                     </div>
@@ -136,14 +136,14 @@
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>PHP</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>PHP</h3>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>MySQL</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>MySQL</h3>
                             </div>
                         </article>
 
@@ -154,20 +154,20 @@
                     <div class="article-container">
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>C++</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>C++</h3>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>C</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>C</h3>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Exp icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
+                            <div class="dark-article">
+                                <h3 ></h3>Python</h3>
                             </div>
                         </article>
 
@@ -245,6 +245,18 @@
             backSpeed: 76,
             loop: true
         })
+    </script>
+    <!-- Dark-theme  -->
+    <script>
+        var icon = document.querySelector(".dark-theme");
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme-color");
+            if (document.body.classList.contains("dark-theme-color")) {
+                icon.src = "./assets/sun.png";
+            } else {
+                icon.src = "./assets/moon.png";
+            }
+        }
     </script>
 </body>
 
