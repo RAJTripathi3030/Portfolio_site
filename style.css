@@ -268,7 +268,12 @@ sections {
     border-radius: 2rem;
 
 }
-
+#exp-id{
+    color: var(--secondary-colour);
+}
+#edu-id{
+    color: var(--secondary-colour);
+}
 .btn-color-1,
 .btn-color-2 {
     border: rgb(53, 53, 53)0.1rem solid;
@@ -287,7 +292,7 @@ sections {
 }
 
 .btn-color-1:hover {
-    background: var(--secondary-colour);
+    background: var(--primary-colour);
 }
 
 .btn-color-2 {
